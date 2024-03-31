@@ -1,0 +1,23 @@
+.middle-part {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.56%;
+  margin: 15px 0 0;
+  padding: 30px;
+  list-style: none;
+
+  background-color: $color-7;
+
+  @include vp-1199 {
+    padding: 2.5vw;
+  }
+
+  li {
+    height: 199px;
+    background-color: $color-8;
+
+    @include vp-1199 {
+      height: 16.6vw;
+    }
+  }
+}

@@ -1,8 +1,8 @@
-import {mobileVhFix} from './utils/mobile-vh-fix.js';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
-import {CustomSelect} from './modules/select/custom-select';
-import {uploadFile, uploadImageDrop} from './modules/input-file/init-upload';
+// import {mobileVhFix} from './utils/mobile-vh-fix.js';
+// import {initModals} from './modules/modals/init-modals';
+// import {Form} from './modules/form-validate/form';
+// import {CustomSelect} from './modules/select/custom-select';
+// import {uploadFile, uploadImageDrop} from './modules/input-file/init-upload';
 
 // ---------------------------------
 
@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
 
-  mobileVhFix();
+  // mobileVhFix();
 
   // Modules
   // ---------------------------------
@@ -19,14 +19,30 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    initModals();
-    uploadFile();
-    uploadImageDrop();
-    const select = new CustomSelect();
-    select.init();
-    const form = new Form();
-    window.form = form;
-    form.init();
+    // initModals();
+    // uploadFile();
+    // uploadImageDrop();
+    // const select = new CustomSelect();
+    // select.init();
+    // const form = new Form();
+    // window.form = form;
+    // form.init();
+
+    const User = {
+      name: 'Vasya',
+      getName() {
+        return this.name;
+      },
+    };
+
+    console.log(User.getName());
+    // const User = {
+    //   name: 'Vasya',
+    //   // eslint-disable-next-line no-invalid-this
+    //   getName: () => this.name,
+    // };
+
+    // console.log(User.getName());
   });
 });
 

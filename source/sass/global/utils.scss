@@ -1,11 +1,15 @@
 .wrapper {
-  position: relative;
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  background-color: $color-1;
 
   .header,
   .footer {

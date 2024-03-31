@@ -1,13 +1,30 @@
 .header {
-  padding: 28px 0;
+  position: relative;
+  z-index: 1;
 
-  background-color: $color-neon-blue;
-
-  .container {
+  &__wrapper {
     display: flex;
+
+    width: 100%;
+    margin: 0 0 15px;
+    padding: 31px;
+    background-color: $color-2;
   }
 
-  &__logo {
+  &__button {
+    position: relative;
+    z-index: 1;
     color: $color-default-white;
+    background-color: $color-3;
+
+    &:hover {
+      .modal {
+        transform: scale(1);
+        visibility: visible;
+        opacity: 1;
+
+        pointer-events: auto;
+      }
+    }
   }
 }

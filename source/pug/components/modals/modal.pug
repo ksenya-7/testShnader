@@ -5,5 +5,5 @@ mixin modal(mods)
       .modal__content
         if block
           block
-        button.modal__close-btn(type="button", aria-label="Закрыть попап", data-close-modal)
-          +icon("icon-close", 15, 15)
+        a.modal__close-btn(href="#close", title="close", aria-label="Закрыть попап") X
+        p Pop-up
